@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <header>
+        <img src="Images/WEBSITE LOGO.png" alt="Website Logo" id="logo">
+        <div class="header-text">
+            <h1>TOGETHER FOR TOMORROW</h1>
+            <h2>Standing Firm Against Violence, Advocating for Tomorrow</h2>
+        </div>
+        <div class="tagline">"War Leaves Scars; Peace Leaves Legacies."</div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <h2>Test Your Knowledge!</h2>
+            <div id="quiz-questions"></div> <!-- Questions will appear here -->
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button id="prev-btn" onclick="prevQuestion()" style="display: none;">Previous</button>
+                <button id="next-btn" onclick="nextQuestion()">Next</button>
+                <button id="submit-btn" onclick="submitQuiz()" style="display: none;">Submit</button>
+            </div>
+
+            <div id="result" style="display: none;"></div> <!-- Score result -->
+        </div>
+    </main>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <!-- JavaScript File -->
+    <script src="quiz1.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voices for Equality - Signup</title>
+  <link rel="stylesheet" href="subsign.css">
+  <script defer src="subsign.js"></script>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <header>
+        <img src="Images/WEBSITE LOGO.png" alt="Website Logo" id="logo">
+        <div class="header-text">
+            <h1>Voices for Equality</h1>
+			<h2>Empowering every voice for a better tomorrow</h2>
+        </div>
+        <div class="tagline">"Uniting voices for peace, justice, and equality."</div>
+    </header>
+
+  </header>
+
+  <main>
+    <section>
+	  <div class="signup-container">
+      <form id="signup-form">
+        <h3>Join Our Campaign</h3>
+
+        <label>First Name *: <input type="text" id="firstName" required></label>
+        <span class="error" id="errorFirstName"></span><br>
+
+        <label>Last Name *: <input type="text" id="lastName" required></label>
+        <span class="error" id="errorLastName"></span><br>
+
+        <label>Sex *:</label><br>
+        <label><input type="radio" name="sex" value="Male"> Male</label>
+        <label><input type="radio" name="sex" value="Female"> Female</label>
+        <label><input type="radio" name="sex" value="Prefer not to say"> Prefer not to say</label>
+        <span class="error" id="errorSex"></span><br>
+
+        <label>Email Address *: <input type="email" id="email" required></label>
+        <span class="error" id="errorEmail"></span><br>
+
+        <label>Password *: <input type="password" id="password" required></label>
+        <span class="error" id="errorPassword"></span><br>
+
+        <label>Contact Number: <input type="text" id="contact"></label><br>
+
+        <label>Why you are supporting our campaign *:<br>
+          <textarea id="reason" required></textarea>
+        </label>
+        <span class="error" id="errorReason"></span><br><br>
+
+        <button type="submit">Sumbit</button>
+		
+		<a href="index.html" class="back-button">Back to Home</a> 
+		
+      </form>
+    </section>
+  </main>
+		
+</body>
+</html>
